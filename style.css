@@ -1,0 +1,19 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/* Reset Page */
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex; /* Align child elements X */
+    align-items: center; /* Center X */
+    justify-content: center; /* Center Y */
+    height: 100vh; /* Full height */
+    overflow: hidden; /* No scrollbars */
+    margin: 0; /* No margins */
+}
+
+ 
