@@ -45,7 +45,7 @@ body{
     height: calc(100vh + 60px);/* Calculate height to set even T-B blur effect*/
     z-index: -1; /* Behind 0% */
 
-    filter: blur(70px); /* Applies a blur effect to the background image. */
+    filter: blur(0px); /* Applies a blur effect to the background image. */
 } 
 
 .loading-text {
