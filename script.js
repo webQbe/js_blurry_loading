@@ -28,6 +28,9 @@ function blurring(){
     // scale() is called as load is updated
     loadText.style.opacity = scale(load, 0, 100, 1, 0);
 
+    // Set bg blur level
+    bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
+
     /* scale() Syntax Breakdown: 
 
         scale(load, 0, 100, 1, 0)
