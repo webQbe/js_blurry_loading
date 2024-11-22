@@ -16,4 +16,45 @@ body{
     margin: 0; /* No margins */
 }
 
- 
+/* Style background */
+.bg {
+    background: url('https://images.unsplash.com/photo-1576161787924-01bb08dad4a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2104&q=80') no-repeat center center/cover;
+
+    /* Syntax Breakdown
+
+        url(...):
+            Specifies the URL of the background image. In this case, it’s an image from Unsplash.
+
+        no-repeat:
+            Ensures the image does not repeat, so only one copy of the image is displayed.
+
+        center center:
+            Aligns the image to the center of the element both horizontally (center) and vertically (center).
+
+        /cover:
+            Resizes the image to completely cover the element's area while maintaining its aspect ratio. Portions of the image may be cropped to achieve this.
+    
+    */
+
+    position: absolute; /*  Overlap on viewport */
+
+    top: -30px;
+    left: -30px;
+
+    width: calc(100vw + 60px); /* Calculate width to set even L-R blur effect */
+    height: calc(100vh + 60px);/* Calculate height to set even T-B blur effect*/
+    z-index: -1; /* Behind 0% */
+
+    filter: blur(70px); /* Applies a blur effect to the background image. */
+} 
+
+.loading-text {
+
+    font-size: 50px;
+    color: #fff;
+
+}
+
+
+
+
