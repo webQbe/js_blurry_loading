@@ -21,6 +21,9 @@ function blurring(){
 
     }
 
+    // Update loadText element
+    loadText.innerHTML = `${load}%`;
+
     // Log load's value
     console.log(load);
 }
