@@ -38,8 +38,8 @@ function blurring(){
             load : Current load value
             0    : Start time
             100  : End time
-            1    : Starting Opacity (Visible)
-            0    : Ending Opacity (Invisible)
+            1    : Starting value [opacity (Visible)] [filter (blurred)]
+            0    : Ending value [opacity (Invisible)] [filter (clear)]
     
     */
 
