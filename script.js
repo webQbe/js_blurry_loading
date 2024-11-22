@@ -24,6 +24,27 @@ function blurring(){
     // Update loadText element
     loadText.innerHTML = `${load}%`;
 
-    // Log load's value
-    console.log(load);
+    // Set loadText opacity
+    // scale() is called as load is updated
+    loadText.style.opacity = scale(load, 0, 100, 1, 0);
+
+    /* scale() Syntax Breakdown: 
+
+        scale(load, 0, 100, 1, 0)
+
+            load : Current load value
+            0    : Start time
+            100  : End time
+            1    : Starting Opacity (Visible)
+            0    : Ending Opacity (Invisible)
+    
+    */
+
+}
+
+
+const scale = (num, in_min, in_max, out_min, out_max) => {
+
+    return (num - in_min) * (out_max - out_min) / 
+    (in_max - in_min) + out_min;
 }
