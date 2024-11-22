@@ -13,6 +13,14 @@ function blurring(){
     // Increment load value by 1
     load++
 
+    // Skip if load is lower than 100
+    if(load > 99){
+
+        // Stop int if load's value is 100
+        clearInterval(int)
+
+    }
+
     // Log load's value
     console.log(load);
 }
